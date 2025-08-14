@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .card {
+            padding: 10px;
+            width: 270px;
+            height: 400px;
+            box-shadow: 0 0 10px green;
+        }
+
+        #cardContainer {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+</head>
+
+<body>
+    <div id="root">
+
+    </div>
+    <script type="text/babel">
+
+        function createCard(name,imageUrl) {
+             //var imageUrl = "https://tse1.mm.bing.net/th/id/OIP.4Sf5Qzlwrq-0iNoydcGW0wHaLH?rs=1&pid=ImgDetMain&o=7&rm=3";
+            return (<div class="card">
+                <img src={imageUrl}
+                    width="100%" height="270" />
+                <h3>{name}</h3>
+                <p>A highly motivated and results-oriented professional with expertise in technology.</p>
+                <button>Profile Details</button>
+            </div>
+            );
+        }
+
+        function multipleCard(){
+            return (<div id="cardContainer">
+                {createCard("Jeff","https://tse1.mm.bing.net/th/id/OIP.4Sf5Qzlwrq-0iNoydcGW0wHaLH?rs=1&pid=ImgDetMain&o=7&rm=3")}
+                {createCard("Mark","https://tse1.mm.bing.net/th/id/OIP.fBsCxHaiO6Z7ZK2lPCacYAHaEn?rs=1&pid=ImgDetMain&o=7&rm=3")}
+                {createCard("Elon","https://c.pxhere.com/photos/93/c7/businessman_man_portrait_male_costume_business_office_office_style-815849.jpg!d")}
+                {createCard("bill","https://tse3.mm.bing.net/th/id/OIP.Ve36aBEnNXJgbLmrlUgDFQHaLH?rs=1&pid=ImgDetMain&o=7&rm=3")}</div>);
+        }
+
+
+        ReactDOM.render(multipleCard(), document.getElementById('root'));
+
+    </script>
+</body>
+
+</html>
