@@ -2,35 +2,32 @@
 <html>
 
 <head>
-    <title>List Using html</title>
+
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <title>List in React</title>
+
 </head>
 
 <body>
-    <h2>List in html</h2>
-    <ol>
-        <li>Apple</li>
-        <li>Samsung</li>
-        <li>Oppo</li>
-        <li>OnePlus</li>
-    </ol>
-    <ol>
-        <li>Apple</li>
-        <li>Samsung</li>
-        <li>Oppo</li>
-        <li>OnePlus</li>
-    </ol>
-    <ol>
-        <li>Apple</li>
-        <li>Samsung</li>
-        <li>Oppo</li>
-        <li>OnePlus</li>
-    </ol>
-    <ol>
-        <li>Apple</li>
-        <li>Samsung</li>
-        <li>Oppo</li>
-        <li>OnePlus</li>
-    </ol>
+
+    <div id="root">
+
+    </div>
+
+    <script>
+        var container = React.createElement('ol', { type: "a", id: "users", style: { color: "green", backgroundColor: "black",paddingTop:"5px" } },
+            [React.createElement('li', {}, "John Doe"),
+            React.createElement('li', {}, "Java Guides"),
+            React.createElement('li', {}, "Tava T point")]);
+
+        ReactDOM.render(container, document.getElementById('root'));
+
+
+    </script>
+
 </body>
 
 </html>
