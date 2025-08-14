@@ -1,4 +1,0 @@
-Get all products
-------------------
-Methd type : "GET"
-https://fakestoreapi.com/products
