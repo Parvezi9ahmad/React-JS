@@ -1,0 +1,25 @@
+{
+    "result": [
+        {
+            "name": "s1",
+            "city": "C1"
+        },
+        {
+            "name": "s2",
+            "city": "C2"
+        },
+        {
+            "name": "s3",
+            "city": "C3"
+        },{
+            "name": "s4",
+            "city": "C4"
+        },{
+            "name": "s5",
+            "city": "C5"
+        }
+    ],
+    "data": {
+        "dummy": ""
+    }
+}
