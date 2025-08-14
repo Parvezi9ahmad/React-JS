@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #coreContainer {
+            width: 1200px;
+            box-shadow: 0 0 10px red;
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+</head>
+
+<body>
+    <div id="root">
+
+    </div>
+    <script type="text/babel">
+
+        function CreateContainer() {
+            return (<div id="coreContainer">
+                <h2>React JS</h2>
+                <p>React is a powerful and popular JavaScript library developed by Facebook for building dynamic and interactive
+                    user interfaces. It allows developers to create reusable UI components that update efficiently in response to
+                    data changes. React is particularly well-suited for single-page applications (SPAs) where performance and user
+                    experience are critical.At its core, React uses a virtual DOM to optimize rendering, ensuring that changes in
+                    the UI are minimal and efficient. It promotes a component-based architecture, making the codebase modular,
+                    reusable, and easier to manage. With JSX (a syntax extension), developers can write HTML-like code directly
+                    within JavaScript, improving readability and workflow.React simplifies the process of building complex UIs by
+                    breaking them down into smaller, manageable components. It supports both class-based and modern function-based
+                    components with hooks, enabling state management and side effects in a cleaner way. Its strong ecosystem, including
+                    tools like React Router and Redux, makes it a top choice for modern web development.</p>
+                <button>More Details</button>
+            </div>);
+        }
+
+        function MultipleContainers(){
+            return <div>
+                <CreateContainer/>
+                <CreateContainer/>
+                <CreateContainer/>
+                </div>
+        }
+
+        ReactDOM.render(<MultipleContainers/>, document.getElementById('root'));
+
+    </script>
+</body>
+
+</html>
