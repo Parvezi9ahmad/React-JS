@@ -1,0 +1,27 @@
+{
+  "result": [
+    {
+      "id": "3105",
+      "name": "Shakeeb Ahmad",
+      "city": "c1"
+    },
+    {
+      "id": "c559",
+      "name": "James Faulkner",
+      "city": "c2"
+    },
+    {
+      "id": "e8b5",
+      "name": "Christos",
+      "city": "c3"
+    },
+    {
+      "id": "34ce",
+      "name": "Aakif Ahmad",
+      "city": "c3"
+    }
+  ],
+  "data": {
+    "dummy": ""
+  }
+}
