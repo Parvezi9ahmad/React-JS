@@ -1,0 +1,15 @@
+import ReactDOM from "react-dom";
+import App from "./App";
+import Header from "./components/header/Header";
+import { BrowserRouter } from 'react-router-dom'
+// import ReactDOM from "react-dom/client";  // Notice the '/client' here
+// import App from "./App";
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(<App />);
+
+ReactDOM.render(
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>,
+    document.getElementById("root"));
