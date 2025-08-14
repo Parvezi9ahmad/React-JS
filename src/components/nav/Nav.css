@@ -1,0 +1,51 @@
+.navContainer {
+    background: linear-gradient(45deg, black, rgb(178, 42, 42), black);
+    color: white;
+    height: 73px;
+    display: flex;
+}
+
+.title {
+
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.links {
+
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 17px;
+}
+
+.links a,
+.thirdpanel a {
+    margin-right: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thirdpanel a{
+    margin-right: 30px;
+}
+
+.thirdpanel {
+
+    width: 15%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icon {
+    font-size: 23px;
+}
+

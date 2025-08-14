@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.bg-dark,
+.btn-dark {
+  background: linear-gradient(45deg,
+      rgb(106, 66, 6),
+      /* green */
+      black) !important;
+}
+
+.btn{
+  color: white!important;
+}
+.btn-outline-success {
+  background: linear-gradient(45deg, green, black) !important;
+}

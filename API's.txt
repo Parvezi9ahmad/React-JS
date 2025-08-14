@@ -1,0 +1,24 @@
+DUMMY API for all products
+--------------------------
+https://fakestoreapi.com/products
+
+
+jewelery
+----------
+https://fakestoreapi.com/products/category/jewelery
+
+
+Electronics
+-------------
+https://fakestoreapi.com/products/category/electronics
+
+
+Mens
+----------
+https://fakestoreapi.com/products/category/men's clothing
+
+
+
+Womens
+---------
+https://fakestoreapi.com/products/category/women's clothing
