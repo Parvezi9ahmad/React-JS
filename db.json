@@ -1,0 +1,22 @@
+{
+  "result": [
+    {
+      "id": "0643",
+      "name": "Tom",
+      "city": "c2"
+    },
+    {
+      "id": "dd6e",
+      "name": "White",
+      "city": "c1"
+    },
+    {
+      "id": "3105",
+      "name": "Tim",
+      "city": "c3"
+    }
+  ],
+  "data": {
+    "dummy": ""
+  }
+}
