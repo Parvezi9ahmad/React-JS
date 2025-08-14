@@ -1,0 +1,21 @@
+.Section4{
+    display: flex;
+    justify-content:space-evenly;
+    margin: 120px auto;
+    width: 1000px;
+    gap:30px
+}
+
+.Section4content button{
+    margin-top: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: black;
+    color: cornsilk;
+    padding: 10px 20px
+}
+
+.Section4content h2{
+    margin: 5px;
+    font-size: 32px;
+}
