@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        p {
+            font-weight: bold;
+        }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+</head>
+
+<body>
+    <div id="root">
+
+    </div>
+    <script type="text/babel">
+
+        function CreateUI(props) {
+            return <div>
+                <img src={props.url} width="70" height="70" />
+                <p>{props.title}</p>
+            </div>
+        }
+        const containerStyle = {
+            display: "flex",
+            justifyContent: "space-evenly",
+        }
+        function App() {
+            return <div style={containerStyle}>
+                <CreateUI url="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/2ebb95ec20eae8f1.png?q=100" title="Grocery"/>
+                <CreateUI url="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/cd6aca4f61e8ea95.png?q=100" title="Mobiles"/>
+                <CreateUI url="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/ec2982e5564fe07c.png?q=100" title="Fashion"/>
+                <CreateUI url="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/d9eea6cd0e7b68bb.png?q=100" title="Travel"/>
+                <CreateUI url="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/4d6b13d5a0e0724a.png?q=100" title="electronics"/>
+                <CreateUI url="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/cddd92e134ba3ea9.png?q=100" title="Furniture"/>
+                <CreateUI url="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/9c64dfa667885ca9.png?q=100" title="Appliances"/>
+                <CreateUI url="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/febcb9896245caf4.png?q=100" title="Home"/>
+                
+            </div>
+        }
+
+        ReactDOM.render(<App />, document.getElementById("root"));
+
+    </script>
+</body>
+
+</html>

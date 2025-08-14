@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="assignment.css" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+</head>
+
+<body>
+    <div id="root">
+
+    </div>
+    <script type="text/babel">
+
+        function CreateCard() {
+            return <div>
+                <h2>Collections</h2>
+                <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Mumbai, based on trends</p>
+            </div>
+        }
+
+        function CreateImage(props) {
+            return <div class ="changebo">
+                <img src={props.imgurl} height="150" width="250"/>
+                <p>{props.title}</p>
+            </div>
+        }
+
+        function App() {
+            return <div class="cardimg cardContainer">
+                <CreateImage imgurl="https://th.bing.com/th/id/OIP.fVujLzBWKaIrQ3hbfV8nigHaDE?w=330&h=180&c=7&r=0&o=5&pid=1.7" title="Burger"/>
+                <CreateImage imgurl="https://th.bing.com/th/id/OIP.KjjCqHHhvrzlTfl8mhgskwHaDj?w=328&h=167&c=7&r=0&o=7&pid=1.7&rm=3" title="Pizza"/>
+                <CreateImage imgurl="https://th.bing.com/th/id/OIP.gYoYdZQhus3i-y_D5aoBlwHaE7?w=327&h=180&c=7&r=0&o=7&pid=1.7&rm=3" title="Sandwich"/>
+            </div>
+        }
+
+        function Apps(){
+            return <div >
+                <CreateCard/>
+                <App/>
+                </div>
+        }
+
+        ReactDOM.render(<Apps />, document.getElementById("root"));
+
+    </script>
+</body>
+
+</html>
