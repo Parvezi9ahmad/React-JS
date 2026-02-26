@@ -1,0 +1,43 @@
+1-Dockerfile (Development – matches your config)
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Copy only dependency files first (layer caching)
+COPY package.json package-lock.json ./
+
+RUN npm install
+
+# Copy rest of the project
+COPY . .
+
+# Vite default port
+EXPOSE 5173
+
+# Important: --host allows access from browser
+CMD ["npm", "run", "dev", "--", "--host"]
+
+2-Dockerfile (Production – Recommended for deployment)
+# ---------- Build stage ----------
+FROM node:18-alpine AS build
+
+WORKDIR /app
+
+COPY package.json package-lock.json ./
+RUN npm install
+
+COPY . .
+RUN npm run build
+
+# ---------- Runtime stage ----------
+FROM nginx:alpine
+
+# Remove default nginx static files
+RUN rm -rf /usr/share/nginx/html/*
+
+# Copy Vite build output
+COPY --from=build /app/dist /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
